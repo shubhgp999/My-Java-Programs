@@ -1,4 +1,4 @@
-import java.uitl.Scanner;
+import java.util.Scanner;
 public class BoxProperties{
   public static void main(String[] args)
   {
@@ -8,7 +8,7 @@ public class BoxProperties{
     System.out.println("Enter the value of side a  : ");
     double a = scanner.nextDouble();
 
-    System.out.prinlnt("Enter the value of side b : ");
+    System.out.println("Enter the value of side b : ");
     double b = scanner.nextDouble();
 
     System.out.println("Enter the value of side c : ");
@@ -16,6 +16,11 @@ public class BoxProperties{
 
     double volume = calculateVolume(a,b,c);
     double surfacearea = calculateSurfaceArea(a,b,c);
+    
+    scanner.close();
+    
+    System.out.println("Volume of Box : "+volume);
+    System.out.println("Surface Area of Box : "+surfacearea);
   } // End of Main 
   // Define methods for calculating volume and surface area
   public static double calculateVolume(double a,double b,double c)
